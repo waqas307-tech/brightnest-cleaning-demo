@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightNest Home Cleaning — Austin, TX | House Cleaning You Can Trust</title>
+  <meta name="description" content="BrightNest Home Cleaning — background-checked cleaners, flat prices by home size, and a happy-home guarantee. Standard, deep and move-in/out cleans across Austin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top strip: today's hours are filled in by script.js -->
+  <div class="topbar">
+    <p><span class="dot"></span> <span id="today-line">Open today: <strong id="today-hours">8:00 AM – 6:00 PM</strong></span> &nbsp;·&nbsp; Serving Austin &amp; nearby suburbs &nbsp;·&nbsp; <a href="tel:+15125550151">(512) 555-0151</a></p>
+  </div>
+
+  <!-- Header: logo left, links right, sticks to the top while scrolling -->
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#top" aria-label="BrightNest Home Cleaning — home">
+      <svg class="logo-mark" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11.2 12 4l8 7.2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.2 9.8V20h11.6V9.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11l.9 2.1 2.1.9-2.1.9L12 17l-.9-2.1-2.1-.9 2.1-.9z" fill="currentColor"/></svg>
+      <span class="logo-text">Bright<em>Nest</em><small>HOME CLEANING · AUSTIN</small></span>
+    </a>
+    <button class="menu-button" id="menu-button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#services">Services</a>
+      <a href="#prices">Prices</a>
+      <a href="#how">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Hours &amp; Areas</a>
+      <a class="call-button" href="#quote">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Get a Quote
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO: bright photo, plain promise, price honesty up front -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg>
+        4.9 rating · 480+ Austin reviews
+      </p>
+      <h1>Come home to a house that's <em>already clean.</em></h1>
+      <p class="hero-sub">We clean kitchens, bathrooms, floors and everything in between — with flat prices you see before we arrive, and the same trusted crew every visit.</p>
+      <div class="hero-buttons">
+        <a class="button" href="#quote">Get my free quote</a>
+        <a class="button button-ghost" href="#prices">See prices first</a>
+      </div>
+      <div class="hero-chips">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5 10 18 19.5 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Background-checked cleaners</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5 10 18 19.5 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Fully insured</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 12.5 10 18 19.5 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>We bring all supplies</span>
+      </div>
+    </div>
+    <!-- A real price, shown on the first screen — no "call for pricing" games -->
+    <aside class="hero-card">
+      <p class="hero-card-title">A real example</p>
+      <p class="hero-card-main">Standard clean · 2-bed home in Mueller</p>
+      <p class="hero-card-price">$145 <span>flat</span></p>
+      <p class="hero-card-note">Same price on the day. No add-ons pushed at your door.</p>
+    </aside>
+    <a class="hero-scroll" href="#trust" aria-label="Scroll down">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 9.5 12 16.5 19 9.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- Moving strip: the promises, scrolling slowly -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Background-checked cleaners</span><i></i><span>Flat prices, no surprises</span><i></i><span>We bring all supplies</span><i></i><span>Happy-home guarantee</span><i></i><span>Same crew every visit</span><i></i>
+      <span>Background-checked cleaners</span><i></i><span>Flat prices, no surprises</span><i></i><span>We bring all supplies</span><i></i><span>Happy-home guarantee</span><i></i><span>Same crew every visit</span><i></i>
+    </div>
+  </div>
+
+  <!-- TRUST: why a stranger with a key to your house is a safe choice -->
+  <section class="section trust" id="trust">
+    <div class="trust-grid">
+      <article class="trust-item reveal">
+        <span class="trust-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.2 19 5.8v5.4c0 4.3-2.9 7.3-7 9.3-4.1-2-7-5-7-9.3V5.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9.2 11.8 2 2 3.6-3.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Background-checked cleaners</h3>
+        <p>Every cleaner is interviewed in person, background-checked and insured before they ever get a key.</p>
+      </article>
+      <article class="trust-item reveal">
+        <span class="trust-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 10h14l-1.3 9.2a2 2 0 0 1-2 1.8H8.3a2 2 0 0 1-2-1.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.5 10V8.5a3.5 3.5 0 0 1 7 0V10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 13.2l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z" fill="currentColor"/></svg></span>
+        <h3>We bring all supplies</h3>
+        <p>Our vacuums, our cloths, our cleaning products — including plant-based ones if you prefer. You provide nothing.</p>
+      </article>
+      <article class="trust-item reveal">
+        <span class="trust-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="10" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="m9.4 10 1.9 1.9 3.3-3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 15.5-1.2 5L12 18l4.2 2.5L15 15.5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+        <h3>Happy-home guarantee</h3>
+        <p>If we miss a spot, tell us within 24 hours and we come back and re-clean it free. No forms, no arguing.</p>
+      </article>
+      <article class="trust-item reveal">
+        <span class="trust-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.8" y="5.5" width="16.4" height="15" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M3.8 10h16.4M8 3.4v3.4M16 3.4v3.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="m9.3 15.8 1.8 1.8 3.4-3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Easy rescheduling</h3>
+        <p>Life happens. Move or skip a visit up to the day before, free — a text or a call is all it takes.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES: photo cards for the four cleans -->
+  <section class="section" id="services">
+    <p class="eyebrow">Our cleans</p>
+    <h2>Pick the clean <em>your week needs</em></h2>
+    <p class="section-intro">Four cleans cover almost every home. Every one of them works from the same room-by-room checklist.</p>
+
+    <div class="service-grid">
+      <article class="service-card reveal">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=900&auto=format&fit=crop" alt="A BrightNest cleaner wiping down a kitchen counter"><span class="tag">Most booked</span></div>
+        <div class="service-body">
+          <div class="service-line"><h3>Standard Clean</h3><p class="price">from $120</p></div>
+          <p>The regular upkeep clean — kitchens, bathrooms, floors, dusting and beds made.</p>
+          <ul class="includes">
+            <li>Kitchen counters, sink &amp; stove top</li>
+            <li>Bathrooms scrubbed and disinfected</li>
+            <li>All floors vacuumed and mopped</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=900&auto=format&fit=crop" alt="Deep cleaning a bathroom until the tiles shine"><span class="tag">The full reset</span></div>
+        <div class="service-body">
+          <div class="service-line"><h3>Deep Clean</h3><p class="price">from $220</p></div>
+          <p>Everything in a standard clean, plus the places that get skipped for months.</p>
+          <ul class="includes">
+            <li>Baseboards, vents &amp; ceiling fans</li>
+            <li>Inside oven and fridge included</li>
+            <li>Grout, taps &amp; shower glass detailed</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=900&auto=format&fit=crop" alt="An empty, spotless apartment ready for new tenants"><span class="tag">Deposit-friendly</span></div>
+        <div class="service-body">
+          <div class="service-line"><h3>Move-In / Move-Out</h3><p class="price">from $260</p></div>
+          <p>For empty homes. We clean it like the landlord's inspection is tomorrow — because it is.</p>
+          <ul class="includes">
+            <li>Inside every cupboard and drawer</li>
+            <li>Walls spot-cleaned, marks removed</li>
+            <li>Photo report sent when we finish</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=900&auto=format&fit=crop" alt="A sunny, tidy living room kept clean on a regular plan"><span class="tag">Save 15%</span></div>
+        <div class="service-body">
+          <div class="service-line"><h3>Recurring Plans</h3><p class="price">save 15%</p></div>
+          <p>Weekly, every two weeks, or monthly. Same crew, same day, one less thing to think about.</p>
+          <ul class="includes">
+            <li>15% off the standard price, always</li>
+            <li>Same two-person crew each visit</li>
+            <li>Skip or move a visit free, anytime</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICES: the full list, by home size — like the best Austin cleaners publish -->
+  <section class="section" id="prices">
+    <p class="eyebrow">Prices</p>
+    <h2>Flat prices, <em>by the size of your home</em></h2>
+    <p class="section-intro">The price you see here is the price on your receipt. Recurring plans take 15% off every figure below.</p>
+
+    <div class="price-list reveal">
+      <div>
+        <h3>Standard clean</h3>
+        <ul>
+          <li><span>1 bed · 1 bath</span><b>$120</b></li>
+          <li><span>2 bed · 2 bath</span><b>$145</b></li>
+          <li><span>3 bed · 2 bath</span><b>$175</b></li>
+          <li><span>4 bed · 3 bath</span><b>$215</b></li>
+          <li><span>5 bed · 4 bath</span><b>$255</b></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Deep &amp; moving cleans</h3>
+        <ul>
+          <li><span>Deep clean · 2-bed home</span><b>$250</b></li>
+          <li><span>Deep clean · 4-bed home</span><b>$345</b></li>
+          <li><span>Move-in/out · 1-bed home</span><b>$260</b></li>
+          <li><span>Move-in/out · 3-bed home</span><b>$340</b></li>
+          <li><span>Bigger home? We quote it free</span><b>—</b></li>
+        </ul>
+      </div>
+    </div>
+    <p class="price-note">Handy extras when you want them: inside oven $35 · inside fridge $35 · laundry, washed and folded, $25 a load · interior windows $6 each. Nothing is ever added without you asking first.</p>
+  </section>
+
+  <!-- Special offer -->
+  <section class="offer reveal">
+    <div class="offer-inner">
+      <p class="offer-tag">New customers</p>
+      <h2>Your first clean is 20% off</h2>
+      <p>Any clean, any size of home. Mention this page when you call and the discount is on your first invoice — simple as that.</p>
+      <a class="button button-light" href="tel:+15125550151">Call (512) 555-0151</a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: three steps, no mystery -->
+  <section class="section" id="how">
+    <p class="eyebrow">How it works</p>
+    <h2>Booked in minutes, <em>cleaned on your day</em></h2>
+    <div class="steps-grid">
+      <article class="step-card reveal">
+        <span class="step-number">1</span>
+        <h3>Tell us about your home</h3>
+        <p>Call or send the form below. Two minutes of questions — size of home, the clean you want, any trouble spots — and you get one flat price.</p>
+      </article>
+      <article class="step-card reveal">
+        <span class="step-number">2</span>
+        <h3>We clean, you carry on</h3>
+        <p>Your crew arrives in the window you picked, with all supplies in hand. Most people head out; plenty stay and work from home. Both are fine.</p>
+      </article>
+      <article class="step-card reveal">
+        <span class="step-number">3</span>
+        <h3>Walk through, then relax</h3>
+        <p>We text you when we're done. Walk the rooms — if anything's missed, say so within 24 hours and we come back and fix it free.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- STORY: photo on one side, honest story and proof numbers on the other -->
+  <section class="section story" id="about">
+    <div class="story-photo reveal"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1400&auto=format&fit=crop" alt="A bright Austin apartment living room after a BrightNest clean"></div>
+    <div class="story-text reveal">
+      <p class="eyebrow">Our story</p>
+      <h2>A small Austin crew that <em>treats your home like our own</em></h2>
+      <p>BrightNest started in 2016 when our founder, Carla, was cleaning houses on weekends and kept hearing the same two complaints: prices that changed at the door, and a different stranger every visit.</p>
+      <p>So we built the opposite. Prices are printed on this page and stay put. Your crew is the same two people each time, employed by us — not gig workers — and they learn how you like your kitchen left.</p>
+      <div class="stats">
+        <div><b>2016</b><span>Cleaning Austin since</span></div>
+        <div><b>1,400+</b><span>Homes cleaned</span></div>
+        <div><b>96%</b><span>Of clients book again</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <p class="eyebrow">Reviews</p>
+    <h2>What Austin <em>actually says</em></h2>
+    <div class="review-grid">
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></p>
+        <p>"Same two ladies every two weeks, and my kitchen has never looked this good on a Tuesday. The price on the website is the price on my card — every single time."</p>
+        <cite>— Dana W., Mueller</cite>
+      </article>
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></p>
+        <p>"They did our move-out clean and sent photos of every room when they finished. We got our full deposit back. Enough said."</p>
+        <cite>— Marcus T., East Austin</cite>
+      </article>
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.5l-5.9 3.1 1.2-6.5L2.5 9.5l6.6-.9z"/></svg></p>
+        <p>"I work from home and they clean around me without any fuss. Rescheduled twice this month because of travel — changed with one text, no fee, no attitude."</p>
+        <cite>— Priya S., Hyde Park</cite>
+      </article>
+    </div>
+  </section>
+
+  <!-- VISIT: hours (today highlighted by script.js) and the areas we serve -->
+  <section class="section visit" id="visit">
+    <div class="visit-card reveal">
+      <p class="eyebrow">Hours</p>
+      <h2>When we clean</h2>
+      <table class="hours-table" id="hours-table">
+        <tr data-days="1,2,3,4,5"><td>Monday – Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-days="6"><td>Saturday</td><td>8:00 AM – 4:00 PM</td></tr>
+        <tr data-days="0"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="today-note" id="today-note"></p>
+      <p class="visit-line">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <a href="tel:+15125550151">(512) 555-0151</a> · hello@brightnestatx.com
+      </p>
+    </div>
+    <div class="visit-card visit-card-light reveal">
+      <p class="eyebrow">Areas we serve</p>
+      <h2>All of Austin, from our East 6th base</h2>
+      <p class="address">Our office: 2410 E 6th St, Austin, TX 78702<br>Crews leave from here every morning, supplies loaded.</p>
+      <ul class="features">
+        <li>Central: Downtown, Hyde Park, Mueller, East Austin</li>
+        <li>North: Round Rock, Cedar Park, Pflugerville</li>
+        <li>South: Circle C, Buda, Kyle, South Congress</li>
+        <li>West: West Lake Hills, Tarrytown, Bee Cave</li>
+      </ul>
+      <a class="button" href="#quote">Check your date</a>
+    </div>
+  </section>
+
+  <!-- QUOTE: simple form, script.js shows the thank-you note -->
+  <section class="section contact" id="quote">
+    <p class="eyebrow">Get a quote</p>
+    <h2>Your price, <em>within one working day</em></h2>
+    <p class="section-intro">Tell us the size of your home and the clean you're after. We reply with one flat price — the same one you'll find on the price list above.</p>
+    <form id="contact-form" class="reveal">
+      <div class="form-row">
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="phone">Your phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(512) 555-0100" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="home-size">Size of home</label>
+          <select id="home-size" name="home-size">
+            <option>1 bed · 1 bath</option>
+            <option selected>2 bed · 2 bath</option>
+            <option>3 bed · 2 bath</option>
+            <option>4 bed · 3 bath</option>
+            <option>5 bed · 4 bath</option>
+            <option>Bigger than that</option>
+          </select>
+        </div>
+        <div>
+          <label for="clean-type">Type of clean</label>
+          <select id="clean-type" name="clean-type">
+            <option selected>Standard clean</option>
+            <option>Deep clean</option>
+            <option>Move-in / move-out</option>
+            <option>Recurring plan</option>
+          </select>
+        </div>
+      </div>
+      <label for="message">Anything we should know?</label>
+      <textarea id="message" name="message" rows="4" placeholder="Two friendly dogs, a home office that needs care, Fridays suit us best..."></textarea>
+      <button class="button" type="submit">Send my quote request</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Bright<em>Nest</em> Home Cleaning</p>
+    <p>2410 E 6th St, Austin, TX 78702 · (512) 555-0151 · Mon–Sat</p>
+    <p class="footer-socials">
+      <a href="#" aria-label="BrightNest on Instagram"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg></a>
+      <a href="#" aria-label="BrightNest on Facebook"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.5 8.2h2.7V4.6h-2.7a4.3 4.3 0 0 0-4.3 4.3v2.4H7.5v3.6h2.7v5.5h3.6v-5.5h2.7l.5-3.6h-3.2V9c0-.5.3-.8.7-.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+      <span>Follow along <b>@brightnestatx</b></span>
+    </p>
+    <p class="footer-small">© <span id="year">2026</span> BrightNest Home Cleaning · Demo website — a fictional business, made as a design sample.</p>
+  </footer>
+
+  <!-- Sticky call button on phones: one tap and the customer is calling -->
+  <a class="sticky-call" href="tel:+15125550151">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    Call BrightNest
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
